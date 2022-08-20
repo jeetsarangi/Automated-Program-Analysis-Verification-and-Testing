@@ -1,0 +1,60 @@
+// The Control Flow Graph
+digraph {
+	0 [label=":vara = 10
+:varb = 20
+(:vara < :varb)
+"]
+	1 [label=":vara = (:vara + :varb)
+:varb = (:vara - :varb)
+:vara = (:vara - :varb)
+"]
+	2 [label="(:vara < :varb)
+"]
+	3 [label=":__rep_counter_1 = 10
+"]
+	4 [label="(:__rep_counter_1 != 0)
+"]
+	5 [label=":vara = 0
+:varb = 0
+:__rep_counter_1 = (:__rep_counter_1 - 1)
+False
+"]
+	6 [label=":__rep_counter_2 = 45
+"]
+	7 [label="(:__rep_counter_2 != 0)
+"]
+	8 [label=":l = 89
+:__rep_counter_3 = 10
+"]
+	9 [label="(:__rep_counter_3 != 0)
+"]
+	10 [label=":vara = 0
+:varb = 0
+:__rep_counter_3 = (:__rep_counter_3 - 1)
+False
+"]
+	11 [label=":__rep_counter_2 = (:__rep_counter_2 - 1)
+False
+"]
+	12 [label=""]
+	0 -> 1
+	0 -> 2
+	1 -> 2
+	2 -> 3
+	2 -> 12
+	3 -> 4
+	4 -> 5
+	4 -> 6
+	5 -> 4
+	5 -> 6
+	6 -> 7
+	7 -> 8
+	7 -> 12
+	8 -> 9
+	9 -> 10
+	9 -> 11
+	10 -> 9
+	10 -> 11
+	11 -> 7
+	11 -> 12
+}

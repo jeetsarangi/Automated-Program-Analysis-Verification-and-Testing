@@ -1,0 +1,16 @@
+Enter the Filename:Test1.py
+Assignment Statements:
+num1=10
+num2=14
+num3=12
+largest=num1
+largest=num2
+largest=num3
+
+ 
+Branch Conditions:
+num1>=num2 and num1>=num3
+num2>=num1 and num2>=num3
+
+ 
+Loop Conditions:

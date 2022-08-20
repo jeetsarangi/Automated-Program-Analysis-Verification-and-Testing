@@ -1,0 +1,17 @@
+Enter the Filename:Test4.py
+Assignment Statements:
+choice=input(Enter choice(1/2/3/4): )
+num1=float(input(Enter first number: ))
+num2=float(input(Enter second number: ))
+
+ 
+Branch Conditions:
+choice in (1,2,3,4)
+choice==1
+choice==2
+choice==3
+choice==4
+
+ 
+Loop Conditions:
+True

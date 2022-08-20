@@ -1,0 +1,29 @@
+{
+    "1": {
+        "params": "{'x': 5, 'y': 100}",
+        "constparams": "[]",
+        "coverage": "[0, 3, 4, 5]",
+        "pc": "[0, 3]",
+        "pcEval": "[False, True]",
+        "symbEnc": "{'x': 'x', 'y': 'y + 100 - 34'}",
+        "constraints": "[Not(x >= y), y < 1000]"
+    },
+    "2": {
+        "params": "{'x': 999, 'y': 1000}",
+        "constparams": "[]",
+        "coverage": "[0, 3, 5]",
+        "pc": "[0, 3]",
+        "pcEval": "[False, False]",
+        "symbEnc": "{'x': 'x', 'y': 'y - 34'}",
+        "constraints": "[Not(x >= y), Not(y < 1000)]"
+    },
+    "3": {
+        "params": "{'x': 0, 'y': 0}",
+        "constparams": "[]",
+        "coverage": "[0, 1, 2]",
+        "pc": "[0, 2]",
+        "pcEval": "[True, False]",
+        "symbEnc": "{'x': 'x + 10', 'y': 'y'}",
+        "constraints": "[x >= y, Not(False)]"
+    }
+}

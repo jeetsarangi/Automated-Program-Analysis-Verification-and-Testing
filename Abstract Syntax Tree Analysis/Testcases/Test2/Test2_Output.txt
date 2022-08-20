@@ -1,0 +1,14 @@
+Enter the Filename:Test2.py
+Assignment Statements:
+lower=900
+upper=1000
+
+ 
+Branch Conditions:
+num>1
+num%i==0
+
+ 
+Loop Conditions:
+num in range(lower,upper+1)
+i in range(2,num)
